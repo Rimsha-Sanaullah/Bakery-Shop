@@ -7,257 +7,337 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/20L7dZr/a5aA9K/T3i/4X1E3T3j3E3G3X3T3Y3D3S3W3E3E3G3E3F3D3D3E3T3T3G3T3W3S3" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
 </head>
 <body class="bg-background-light text-text-color">
 
-    <!-- Navbar -->
-    <header>
-        <nav class="container">
-            <a href="#" class="nav-title dancing-font">Flour and Butter</a>
-            <div class="nav-links">
-                <a href="#" class="nav-link nav-home active-nav" data-section="home">Home</a>
-                <a href="#" class="nav-link nav-about" data-section="about">About Us</a>
-                <a href="#" class="nav-link nav-menu" data-section="menu">Our Menu</a>
-                <a href="#" class="nav-link nav-gallery" data-section="gallery">Gallery</a>
-                <a href="#" class="nav-link nav-contact" data-section="contact">Contact Us</a>
-            </div>
-        </nav>
-    </header>
+    <div id="preloader">
+        <img src="./Assets/loading-logo.gif" alt="Loading..." />
+    </div>
 
-    <!-- Home Section -->
-    <section id="home" class="section active">
-        <div class="hero-section">
-            <div class="hero-content">
-                <h1 class="hero-title dancing-font">Baked with Love</h1>
-                <p class="hero-subtitle">Discover our delicious assortment of pastries, cakes, and cookies made fresh every day.</p>
-                <a href="#" data-section="menu" class="btn-primary nav-link">Explore Our Menu</a>
-            </div>
-        </div>
-        <div class="container section-padding">
-            <h2 class="text-center dancing-font section-heading">Featured Treats</h2>
-            <div class="grid-cards">
-                <!-- Featured Card 1 -->
-                <div class="card-menu">
-                    <img src="./Assets/Crossints.webp" alt="Fresh Croissant" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title dancing-font">Flaky Croissants</h3>
-                        <p class="card-description">Handcrafted with real butter for a perfect, golden crunch.</p>
-                        <span class="card-price">$4.99</span>
-                    </div>
+    <div id="main-content" style="display: none; opacity: 0; transition: opacity 0.5s ease-in-out;">
+    
+        <header>
+            <nav class="container">
+                <a href="#home" class="nav-title dancing-font">Flour and Butter</a>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link nav-home active-nav">Home</a>
+                    <a href="#about" class="nav-link nav-about">About Us</a>
+                    <a href="#menu" class="nav-link nav-menu">Our Menu</a>
+                    <a href="#gallery" class="nav-link nav-gallery">Gallery</a>
+                    <a href="#contact" class="nav-link nav-contact">Contact Us</a>
                 </div>
-                <!-- Featured Card 2 -->
-                <div class="card-menu">
-                    <img src="./Assets/choclate cake.jpeg" alt="Chocolate Cake" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title dancing-font">Chocolate Dream Cake</h3>
-                        <p class="card-description">A rich, moist chocolate cake with a velvety frosting.</p>
-                        <span class="card-price">$5.50</span>
-                    </div>
-                </div>
-                <!-- Featured Card 3 -->
-                <div class="card-menu">
-                    <img src="./Assets/cokkies.webp" alt="Assorted Cookies" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title dancing-font">Assorted Cookies</h3>
-                        <p class="card-description">Classic favorites and seasonal specials in a single box.</p>
-                        <span class="card-price">$3.75</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </nav>
+        </header>
 
-    <!-- About Us Section -->
-    <section id="about" class="section">
-        <div class="container section-padding">
-            <h2 class="text-center dancing-font section-heading">Our Story</h2>
-            <div class="flex-about">
-                <div class="about-image-container">
-                    <img src="./Assets/Bakery Interior.jpg" alt="Bakery interior" class="about-image">
-                </div>
-                <div class="about-text">
-                    <p>Established in 2023, Flour And Butter began as a small home bakery with a passion for creating delicious, high-quality baked goods. Our founder, a self-proclaimed pastry artist, believes that every treat should be a work of art, crafted with the finest ingredients and a touch of magic.</p>
-                    <p>We specialize in a unique blend of classic recipes and innovative creations. From our signature sourdough bread to our whimsical custom-designed cakes, we pour our heart into every single item we bake. Our commitment to quality and attention to detail has earned us a loyal following of happy customers.</p>
-                    <p>We are more than just a bakery; we are a community. We love seeing our customers share our treats with their friends and family, and we believe that food is a powerful way to bring people together. Thank you for being a part of our journey.</p>
+        <section id="home" class="section">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title dancing-font">Baked with Love</h1>
+                    <p class="hero-subtitle">Discover our delicious assortment of pastries, cakes, and cookies made fresh every day.</p>
+                    <a href="#menu" class="btn-primary">Explore Our Menu</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section id="menu" class="section">
-        <div class="container section-padding">
-            <h2 class="text-center dancing-font section-heading">Our Delicious Menu</h2>
-            <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-                <!-- Menu Item 1 -->
-                <div class="card-menu">
-                    <img src="./Assets/Gourmet Brownies.jpg" alt="Chocolate Brownie" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title dancing-font">Gourmet Brownies</h3>
-                        <p class="card-description">Fudgy, rich, and decadent chocolate brownies. A classic favorite.</p>
-                        <span class="card-price">$4.99</span>
-                    </div>
-                </div>
-                <!-- Menu Item 2 -->
-                <div class="card-menu">
-                    <img src="./Assets/Lemon Tart.jpg" alt="Lemon Tart" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title dancing-font">Zesty Lemon Tarts</h3>
-                        <p class="card-description">Tangy and sweet lemon curd in a buttery shortbread crust.</p>
-                        <span class="card-price">$5.50</span>
-                    </div>
-                </div>
-                <!-- Menu Item 3 -->
-                <div class="card-menu">
-                    <img src="./Assets/Red Valvet.webp" alt="Red Velvet Cupcake" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title dancing-font">Red Velvet Cupcakes</h3>
-                        <p class="card-description">Moist cupcake with classic cream cheese frosting.</p>
-                        <span class="card-price">$3.75</span>
-                    </div>
-                </div>
-                 <!-- Menu Item 4 -->
-                 <div class="card-menu">
-                    <img src="./Assets/Cinnamon Roll.webp" alt="Cinnamon Roll" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title dancing-font">Giant Cinnamon Rolls</h3>
-                        <p class="card-description">Soft, gooey, and loaded with cinnamon and cream cheese icing.</p>
-                        <span class="card-price">$4.25</span>
-                    </div>
-                </div>
-                 <!-- Menu Item 5 -->
-                 <div class="card-menu">
-                    <img src="./Assets/Artisan Sourdough.jpg" alt="Sourdough Bread" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title dancing-font">Artisan Sourdough</h3>
-                        <p class="card-description">Baked with a traditional starter for an authentic tang.</p>
-                        <span class="card-price">$6.00</span>
-                    </div>
-                </div>
-                 <!-- Menu Item 6 -->
-                 <div class="card-menu">
-                    <img src="./Assets/Fruit Pie.jpg" alt="Fruit Pie" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title dancing-font">Seasonal Fruit Pies</h3>
-                        <p class="card-description">Made with fresh, locally sourced fruit and a buttery crust.</p>
-                        <span class="card-price">$25.00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="section">
-        <div class="container section-padding">
-            <h2 class="text-center dancing-font section-heading">Our Sweet Creations</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="./Assets/Custom-cake.jpg" alt="Custom Cake">
-                    <div class="overlay"><span class="dancing-font">Custom Cakes</span></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="./Assets/Pasteries.jpg" alt="Pastry Assortment">
-                    <div class="overlay"><span class="dancing-font">Pastry Assortment</span></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="./Assets/Wedding cake.jpg" alt="Wedding Cake">
-                    <div class="overlay"><span class="dancing-font">Wedding Cakes</span></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="./Assets/Cookie box.jpg" alt="Cookie Box">
-                    <div class="overlay"><span class="dancing-font">Cookie Boxes</span></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="./Assets/donuts.webp" alt="Donuts">
-                    <div class="overlay"><span class="dancing-font">Fresh Donuts</span></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="./Assets/coffe and maffins.jpg" alt="Coffee and Muffin">
-                    <div class="overlay"><span class="dancing-font">Coffee & Treats</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container section-padding">
-            <h2 class="text-center dancing-font section-heading">Get in Touch</h2>
-            <div class="flex-contact">
-                <div class="contact-form-container">
-                    <form class="contact-card">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name">
+            <div class="container section-padding">
+                <h2 class="text-center dancing-font section-heading">Featured Treats</h2>
+                <div class="grid-cards">
+                    <div class="card-menu">
+                        <img src="./Assets/Crossints.webp" alt="Fresh Croissant" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title dancing-font">Flaky Croissants</h3>
+                            <p class="card-description">Handcrafted with real butter for a perfect, golden crunch.</p>
+                            <span class="card-price">$4.99</span>
                         </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" name="email" class="form-input" placeholder="Your Email">
+                    </div>
+                    <div class="card-menu">
+                        <img src="./Assets/choclate cake.jpeg" alt="Chocolate Cake" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title dancing-font">Chocolate Dream Cake</h3>
+                            <p class="card-description">A rich, moist chocolate cake with a velvety frosting.</p>
+                            <span class="card-price">$5.50</span>
                         </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" name="message" rows="5" class="form-input" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="card-menu">
+                        <img src="./Assets/cokkies.webp" alt="Assorted Cookies" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title dancing-font">Assorted Cookies</h3>
+                            <p class="card-description">Classic favorites and seasonal specials in a single box.</p>
+                            <span class="card-price">$3.75</span>
                         </div>
-                        <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-info-container" style="margin-top: 3rem;">
-                    <div class="contact-card">
-                        <h3 class="card-title dancing-font">Visit Our Location</h3>
-                        <p class="card-description">123 Sweet Street, Pastryville, CA 90210</p>
-                        <p class="card-description">Phone: (123) 456-7890</p>
-                        <p class="card-description">Email: contact@FlourAndButter.com</p>
-                        <h3 class="card-title dancing-font" style="margin-top: 2rem;">Hours</h3>
-                        <ul style="list-style: none; padding: 0;">
-                            <li>Tuesday - Saturday: 9:00 AM - 6:00 PM</li>
-                            <li>Sunday: 10:00 AM - 4:00 PM</li>
-                            <li>Monday: Closed</li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 FlourAndButter.co - All rights reserved.</p>
-    </footer>
+        <section id="about" class="section">
+            <div class="container section-padding">
+                <h2 class="text-center dancing-font section-heading">Our Story</h2>
+                <div class="flex-about">
+                    <div class="about-image-container">
+                        <img src="./Assets/Bakery Interior.jpg" alt="Bakery interior" class="about-image">
+                    </div>
+                    <div class="about-text">
+                        <p>Established in 2023, Flour And Butter began as a small home bakery with a passion for creating delicious, high-quality baked goods. Our founder, a self-proclaimed pastry artist, believes that every treat should be a work of art, crafted with the finest ingredients and a touch of magic.</p>
+                        <p>We specialize in a unique blend of classic recipes and innovative creations. From our signature sourdough bread to our whimsical custom-designed cakes, we pour our heart into every single item we bake. Our commitment to quality and attention to detail has earned us a loyal following of happy customers.</p>
+                        <p>We are more than just a bakery; we are a community. We love seeing our customers share our treats with their friends and family, and we believe that food is a powerful way to bring people together. Thank you for being a part of our journey.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- JavaScript for Page Navigation -->
+        <section id="menu" class="section">
+            <div class="container section-padding">
+                <h2 class="text-center dancing-font section-heading">Our Delicious Menu</h2>
+                <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="card-menu">
+                        <img src="./Assets/Gourmet Brownies.jpg" alt="Chocolate Brownie" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title dancing-font">Gourmet Brownies</h3>
+                            <p class="card-description">Fudgy, rich, and decadent chocolate brownies. A classic favorite.</p>
+                            <span class="card-price">$4.99</span>
+                        </div>
+                    </div>
+                    <div class="card-menu">
+                        <img src="./Assets/Lemon Tart.jpg" alt="Lemon Tart" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title dancing-font">Zesty Lemon Tarts</h3>
+                            <p class="card-description">Tangy and sweet lemon curd in a buttery shortbread crust.</p>
+                            <span class="card-price">$5.50</span>
+                        </div>
+                    </div>
+                    <div class="card-menu">
+                        <img src="./Assets/Red Valvet.webp" alt="Red Velvet Cupcake" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title dancing-font">Red Velvet Cupcakes</h3>
+                            <p class="card-description">Moist cupcake with classic cream cheese frosting.</p>
+                            <span class="card-price">$3.75</span>
+                        </div>
+                    </div>
+                    <div class="card-menu">
+                        <img src="./Assets/Cinnamon Roll.webp" alt="Cinnamon Roll" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title dancing-font">Giant Cinnamon Rolls</h3>
+                            <p class="card-description">Soft, gooey, and loaded with cinnamon and cream cheese icing.</p>
+                            <span class="card-price">$4.25</span>
+                        </div>
+                    </div>
+                    <div class="card-menu">
+                        <img src="./Assets/Artisan Sourdough.jpg" alt="Sourdough Bread" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title dancing-font">Artisan Sourdough</h3>
+                            <p class="card-description">Baked with a traditional starter for an authentic tang.</p>
+                            <span class="card-price">$6.00</span>
+                        </div>
+                    </div>
+                    <div class="card-menu">
+                        <img src="./Assets/Fruit Pie.jpg" alt="Fruit Pie" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title dancing-font">Seasonal Fruit Pies</h3>
+                            <p class="card-description">Made with fresh, locally sourced fruit and a buttery crust.</p>
+                            <span class="card-price">$25.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <div class="container section-padding">
+                <h2 class="text-center dancing-font section-heading">Our Sweet Creations</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="./Assets/Custom-cake.jpg" alt="Custom Cake">
+                        <div class="overlay"><span class="dancing-font">Custom Cakes</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Assets/Pasteries.jpg" alt="Pastry Assortment">
+                        <div class="overlay"><span class="dancing-font">Pastry Assortment</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Assets/Wedding cake.jpg" alt="Wedding Cake">
+                        <div class="overlay"><span class="dancing-font">Wedding Cakes</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Assets/Cookie box.jpg" alt="Cookie Box">
+                        <div class="overlay"><span class="dancing-font">Cookie Boxes</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Assets/donuts.webp" alt="Donuts">
+                        <div class="overlay"><span class="dancing-font">Fresh Donuts</span></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./Assets/coffe and maffins.jpg" alt="Coffee and Muffin">
+                        <div class="overlay"><span class="dancing-font">Coffee & Treats</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container section-padding">
+                <h2 class="text-center dancing-font section-heading">Get in Touch</h2>
+                <div class="flex-contact">
+                    <div class="contact-form-container">
+                        <form class="contact-card">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-input" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info-container" style="margin-top: 3rem;">
+                        <div class="contact-card">
+                            <h3 class="card-title dancing-font">Visit Our Location</h3>
+                            <p class="card-description">123 Sweet Street, Pastryville, CA 90210</p>
+                            <p class="card-description">Phone: (123) 456-7890</p>
+                            <p class="card-description">Email: contact@FlourAndButter.com</p>
+                            <h3 class="card-title dancing-font" style="margin-top: 2rem;">Hours</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li>Tuesday - Saturday: 9:00 AM - 6:00 PM</li>
+                                <li>Sunday: 10:00 AM - 4:00 PM</li>
+                                <li>Monday: Closed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3 class="footer-title dancing-font">Flour And Butter</h3>
+                    <p class="footer-description">Crafting delicious moments, one bake at a time. We use the finest ingredients to bring you pastries, cakes, and breads that taste like home.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Connect with Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Location</h3>
+                    <p>123 Sweet Street, Pastryville, CA 90210</p>
+                    <p>contact@FlourAndButter.com</p>
+                    <p>(123) 456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FlourAndButter.co - All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const navLinks = document.querySelectorAll('.nav-link');
-            const sections = document.querySelectorAll('.section');
+            const sections = document.querySelectorAll('section');
 
-            const showSection = (sectionId) => {
-                sections.forEach(section => {
-                    section.classList.remove('active');
-                });
-                document.getElementById(sectionId).classList.add('active');
-            };
-
+            // Function to set the active navigation link based on the section currently in view
             const setActiveNav = (sectionId) => {
                 navLinks.forEach(link => {
                     link.classList.remove('active-nav');
                 });
-                document.querySelector(`.nav-${sectionId}`).classList.add('active-nav');
+                const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active-nav');
+                }
             };
 
+            // Intersection Observer to detect which section is in view
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5 // Trigger when 50% of the section is visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const sectionId = entry.target.id;
+                        setActiveNav(sectionId);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Smooth scrolling for navigation links
             navLinks.forEach(link => {
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
-                    const sectionId = link.getAttribute('data-section');
-                    showSection(sectionId);
-                    setActiveNav(sectionId);
+                    const sectionId = link.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(sectionId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
+                            behavior: 'smooth'
+                        });
+                    }
                 });
             });
 
-            // Initial active state
-            showSection('home');
-            setActiveNav('home');
+            // Preloader logic
+            const preloader = document.getElementById("preloader");
+            const mainContent = document.getElementById("main-content");
+            const images = document.querySelectorAll('img');
+            let imagesLoadedCount = 0;
+
+            if (images.length === 0) {
+                // If there are no images, show the content immediately
+                hidePreloader();
+            } else {
+                images.forEach(img => {
+                    const tempImg = new Image();
+                    tempImg.src = img.src;
+                    tempImg.onload = () => {
+                        imagesLoadedCount++;
+                        if (imagesLoadedCount === images.length) {
+                            hidePreloader();
+                        }
+                    };
+                    tempImg.onerror = () => {
+                        imagesLoadedCount++;
+                        if (imagesLoadedCount === images.length) {
+                            hidePreloader();
+                        }
+                    };
+                });
+            }
+
+            function hidePreloader() {
+                preloader.style.opacity = "0";
+                setTimeout(() => {
+                    preloader.style.display = "none";
+                    mainContent.style.display = "block";
+                    mainContent.style.opacity = "1";
+                }, 500);
+            }
         });
     </script>
 </body>
